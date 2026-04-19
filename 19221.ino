@@ -338,4 +338,4 @@ void loop() {
     sendSensorData();
     sendDataPrevMillis = millis();
   }
-} كده الكود ده صح؟
+} 
