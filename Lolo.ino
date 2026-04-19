@@ -321,7 +321,8 @@ void setup() {
 Blynk.begin(BLYNK_AUTH_TOKEN, ssid, pass);
   
   // Firebase
- 
+  config.host = FIREBASE_HOST;
+  config.signer.tokens.legacy_token = FIREBASE_AUTH;
   Firebase.begin(&config, &auth);
   
   Serial.println("🚀 Chameleon Greenhouse with CALIBRATION Started!");
